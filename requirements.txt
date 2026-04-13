@@ -1,0 +1,23 @@
+# Core
+groq
+requests
+python-dotenv
+flask
+
+# Interface
+customtkinter
+pyttsx3
+SpeechRecognition
+pyaudio
+
+# Web / Scraping
+beautifulsoup4
+youtube-transcript-api
+
+# Automação PC
+pyautogui
+Pillow
+psutil
+
+# Playwright (sites JS pesados) — instalar separado:
+# pip install playwright && python -m playwright install chromium
