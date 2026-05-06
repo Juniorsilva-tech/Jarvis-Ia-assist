@@ -1,187 +1,217 @@
-# JARVIS AI
+# Jarvis AI Assist
 
-Autonomous multi-agent AI system designed to automate tasks, generate code, interact with the web and orchestrate intelligent workflows.
+Projeto experimental de automação e orquestração multiagente voltado para **desenvolvimento assistido por IA**, geração de código, QA e workflows inteligentes.
 
-Jarvis AI is an experimental intelligent assistant inspired by modular AI architectures, where specialized agents collaborate to execute complex operations.
-
-The system focuses on automation, modularity and intelligent orchestration.
-
----
-
-## Overview
-
-Jarvis AI is built around a **multi-agent architecture** where each agent is responsible for a specific capability.
-
-A central orchestrator processes user commands and routes tasks to the most appropriate agent.
-
-This architecture allows the system to scale easily and makes it possible to add new capabilities without modifying the core system.
-
-The goal of this project is to explore concepts such as:
-
-* autonomous agents
-* intelligent task orchestration
-* automation systems
-* AI-assisted development tools
+![Python](https://img.shields.io/badge/Python-111827?style=for-the-badge&logo=python&logoColor=3776AB)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Automation](https://img.shields.io/badge/Automation-1F2937?style=for-the-badge)
+![AI Agents](https://img.shields.io/badge/AI_Agents-312E81?style=for-the-badge)
+![Playwright](https://img.shields.io/badge/Playwright-111827?style=for-the-badge&logo=playwright&logoColor=white)
 
 ---
 
-## Key Features
+## Sobre o Projeto
 
-• Multi-agent architecture
-• Intelligent command routing
-• Automation tools for development tasks
-• Code generation capabilities
-• Web automation and browsing
-• Knowledge collection from the web
-• Modular and extensible system design
+O **Jarvis AI Assist** é um projeto experimental criado para estudar como agentes especializados podem colaborar em fluxos de desenvolvimento de software.
 
----
+A ideia central é construir um sistema capaz de:
 
-## System Architecture
+- interpretar solicitações de software;
+- gerar estruturas de projetos;
+- executar validações técnicas;
+- revisar interfaces;
+- sugerir correções;
+- automatizar partes repetitivas do fluxo de desenvolvimento.
 
-Jarvis is divided into multiple core components.
-
-### Core System
-
-Responsible for system orchestration and task management.
-
-Core modules include:
-
-* **Orchestrator** – central controller that manages system workflow
-* **Intent Detection** – analyzes user commands and determines the required action
-* **Agent Router** – routes tasks to specialized agents
+Este projeto não é apresentado como um produto comercial final, mas como uma base de estudo e evolução em **IA aplicada à engenharia de software**.
 
 ---
 
-### Agents
+## Objetivo Técnico
 
-Agents are specialized modules responsible for executing specific tasks.
+O objetivo do Jarvis é explorar conceitos como:
 
-Examples of agents inside the system:
-
-* **Chat Agent** – handles conversational interactions
-* **Code Agent** – generates and modifies source code
-* **Browser Agent** – automates web navigation
-* **Computer Agent** – executes system-level operations
-* **Memory Agent** – manages internal knowledge storage
-* **Learning Agent** – collects knowledge from the internet
-
-This architecture allows Jarvis to behave as a collaborative system where multiple agents work together.
+- arquitetura multiagente;
+- automação de desenvolvimento;
+- geração assistida de código;
+- QA automatizado;
+- validação visual;
+- fallback entre modelos;
+- pipelines de correção;
+- produtividade com IA aplicada.
 
 ---
 
-## Automation Modules
+## Principais Capacidades
 
-Jarvis includes several automation tools designed to assist with development workflows and web operations.
-
-Examples:
-
-* Bug fixing automation
-* Automatic project generation
-* Website cloning
-* Knowledge collection from the web
-
-These modules allow Jarvis to perform complex automated tasks.
-
----
-
-## Tech Stack
-
-Main technologies used in the project:
-
-* Python
-* Modular backend architecture
-* Automation frameworks
-* Web data collection
-* Multi-agent system design
+- Arquitetura modular baseada em agentes.
+- Orquestração central de tarefas.
+- Geração e modificação de código.
+- Pipeline de QA técnico.
+- Revisão visual de interfaces.
+- Execução de automações com segurança local.
+- Sistema de fallback para modelos.
+- Suporte a workflows com React, Vite e Tailwind.
+- Uso de screenshots e validações com Playwright.
 
 ---
 
-## Project Structure
+## Arquitetura Conceitual
 
-Example structure of the system:
-
+```txt
+User Request
+    ↓
+Orchestrator
+    ↓
+Planner / Router
+    ↓
+Specialized Agents
+    ↓
+Generation / QA / Repair
+    ↓
+Validated Output
 ```
-core/
-  agents/
-  brain/
-  router/
-  automation/
-
-modules/
-  learning/
-  memory/
-  tools/
-```
-
-Each module is designed to be independent and easily extendable.
 
 ---
 
-## Installation
+## Agentes e Módulos
 
-Clone the repository:
+Exemplos de módulos usados ou planejados dentro do sistema:
 
-```
-git clone https://github.com/Juniorsilva-tech/jarvis
+- **GeneratorAgent** — geração inicial de código e estrutura.
+- **RepairAgent** — correção de falhas detectadas.
+- **PatchExecutorAgent** — aplicação controlada de alterações.
+- **QAEngine** — validação técnica e análise de qualidade.
+- **DesignReviewerAgent** — análise visual de interfaces.
+- **QualityPipeline** — consolidação de scores e relatórios.
+- **LLM Router** — roteamento e fallback entre modelos.
+
+---
+
+## Stack Utilizada
+
+### Backend e Automação
+
+- Python
+- Flask
+- Playwright
+- Arquitetura modular
+- Pipelines automatizados
+
+### Front-end Suportado
+
+- React
+- Vite
+- Tailwind CSS
+
+### IA e Workflows
+
+- Modelos locais e APIs externas
+- Fallback entre provedores
+- Agentes especializados
+- Automação de QA
+
+---
+
+## Estrutura Simplificada
+
+```txt
+jarvis/
+├── agents/
+├── core/
+├── pipelines/
+├── qa/
+├── execution/
+├── memory/
+├── router/
+├── web/
+└── logs/
 ```
 
-Enter the project directory:
+---
 
-```
-cd jarvis
-```
+## Status do Projeto
 
-Install dependencies:
+Projeto em evolução contínua.
 
-```
-pip install -r requirements.txt
-```
+Atualmente, o foco está em:
 
-Run the system:
+- estabilidade dos pipelines;
+- geração de projetos front-end;
+- QA técnico;
+- revisão visual;
+- automações locais;
+- documentação e apresentação pública segura.
 
-```
-python main.py
-```
+---
+
+## O Que Este Projeto Demonstra
+
+Este repositório demonstra conhecimento prático em:
+
+- arquitetura de software;
+- automação com Python;
+- organização modular;
+- IA aplicada ao desenvolvimento;
+- criação de pipelines;
+- pensamento de produto;
+- workflows de engenharia assistidos por IA.
+
+---
+
+## Limitações Atuais
+
+- Projeto experimental, ainda não é um SaaS comercial.
+- Algumas integrações podem depender de ambiente local.
+- Partes sensíveis da arquitetura podem permanecer privadas por segurança.
+- O foco atual é pesquisa, automação e evolução técnica.
 
 ---
 
 ## Roadmap
 
-Planned improvements for the system:
-
-* Improved natural language understanding
-* Web interface for interaction
-* API interface
-* Persistent memory system
-* Plugin architecture for custom agents
-* Improved agent collaboration
-
----
-
-## Contributing
-
-Contributions are welcome.
-
-If you want to contribute:
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Open a Pull Request
+- Melhorar documentação técnica.
+- Criar dashboard público demonstrativo.
+- Adicionar exemplos de geração de projetos.
+- Melhorar QA visual.
+- Criar logs mais claros para debugging.
+- Adicionar métricas de performance.
+- Evoluir integração com projetos React.
+- Criar versão pública segura e reduzida.
 
 ---
 
-## Author
+## Como Rodar Localmente
 
-Mauricio Junior
-Full Stack Developer
+```bash
+# Clone o repositório
+git clone https://github.com/Juniorsilva-tech/Jarvis-Ia-assist.git
 
-GitHub:
-https://github.com/Juniorsilva-tech
+# Entre na pasta
+cd Jarvis-Ia-assist
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Rode o projeto
+python main.py
+```
+
+> Observação: comandos podem variar conforme a versão local do projeto e módulos habilitados.
 
 ---
 
-## License
+## Autor
 
-This project is open source and intended for research and experimentation purposes.
+**Maurício da Conceição Silva Júnior**
+
+Desenvolvedor focado em Front-end React, UI premium, automação e IA aplicada à entrega de software.
+
+- GitHub: https://github.com/Juniorsilva-tech
+- Portfólio: https://mjr-forge-portfolio.vercel.app
+
+---
+
+## Licença
+
+Projeto experimental para estudo, pesquisa e evolução técnica.
